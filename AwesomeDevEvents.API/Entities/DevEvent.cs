@@ -2,6 +2,12 @@
 {
     public class DevEvent
     {
+        public DevEvent()
+        {
+            Speakers = new List<DevEventSpeaker>();
+            IsDeleted = false;
+        }
+
         public Guid ID { get; set; }
         public string? Title { get; set; }
         public string? Description { get; set; }
@@ -10,5 +16,18 @@
 
         public List<DevEventSpeaker> Speakers { get; set; }
         public bool IsDeleted { get; set; }
+
+        public void Update(string title, string description, DateTime startDate, DateTime endDate)
+        {
+            Title = title;
+            Description = description;
+            StartDate = startDate;
+            EndDate = endDate;
+        }
+
+        public void Deleted()
+        {
+            IsDeleted = true;
+        }
     }
 }
