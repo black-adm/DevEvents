@@ -1,6 +1,5 @@
 ﻿using AwesomeDevEvents.API.Entities;
 using AwesomeDevEvents.API.Persistence;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AwesomeDevEvents.API.Controllers
@@ -76,7 +75,7 @@ namespace AwesomeDevEvents.API.Controllers
 
         [HttpPost("{id}/speakers")]
 
-        public IActionResult PostSpeaker(DevEventSpeaker speaker)
+        public IActionResult PostSpeaker(Guid id, DevEventSpeaker speaker)
         {
             var devEvent = _context.DevEvents.SingleOrDefault(d => d.ID == id);
 
