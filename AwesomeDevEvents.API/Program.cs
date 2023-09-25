@@ -2,8 +2,9 @@ using AwesomeDevEvents.API.Persistence;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("DevEventsCs");
 
-builder.Services.AddDbContext<DevEventDbContext>(o => o.UseInMemoryDatabase("DevEventsDb"));
+builder.Services.AddDbContext<DevEventDbContext>(o => o.UseSqlServer(connectionString));
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
