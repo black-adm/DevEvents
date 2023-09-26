@@ -22,7 +22,7 @@ builder.Services.AddSwaggerGen(a =>
         }
     });
 
-    var xmlFile = "DevEvents.API.xml";
+    var xmlFile = "AwesomeDevEvents.API.xml";
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
     a.IncludeXmlComments(xmlPath);
 });
