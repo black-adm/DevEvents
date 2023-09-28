@@ -1,4 +1,4 @@
-### CRUD com Aspnet Core
+### CRUD com Aspnet Core 7.0 
 # AwesomeDevEvents
 
 <p align="center">
@@ -11,6 +11,7 @@
 <br>
 
 Esse projeto foi desenvolvido com base nos estudos da playlist de **Api Rest**, presente no canal do youtube do professor [@LuisDev](https://www.youtube.com/@luisdev).
+
 Todo *mérito* e *agradecimentos* por esse baita profissional e pelos excelentes conteúdos gratuitos produzidos para a comunidade C#.
 
 <img src="https://i.ibb.co/xff66DT/Captura-de-tela-de-2023-09-27-20-25-48.png" />
