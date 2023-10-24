@@ -18,7 +18,7 @@ Todo *mérito* e *agradecimentos* por esse baita profissional e pelos excelentes
 </br>
 
 > Como testar o projeto na sua máquina
-- Clone o projeto com o comando `git clone https://github.com/black-adm/DevEvents`.
+- Clone o projeto com o comando `git clone https://github.com/black-adm/awesome-dev-events`.
 
 - Instale as dependências do projeto e gere as migrations do banco com o comando `dotnet ef migrations add NOME_DA_MIGRATION -o Persistence/Migrations`.
 
